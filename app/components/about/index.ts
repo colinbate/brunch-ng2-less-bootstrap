@@ -2,7 +2,8 @@ import {Component} from 'angular2/core';
 
 @Component({
   selector: 'about',
-  template: require('./about.tpl')()
+  template: require('./about.tpl')(),
+  styles: [require('./about.style')]
 })
 
 export default class About {
