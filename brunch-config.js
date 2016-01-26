@@ -19,5 +19,11 @@ exports.config = {
     templates: {
       joinTo: 'main.js'
     }
+  },
+  plugins: {
+    copyfilemon: {
+      fonts: ['node_modules/bootstrap/dist/fonts'],
+      lib:   ['node_modules/bootstrap/dist/css/bootstrap.min.css']
+    }
   }
 };

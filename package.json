@@ -38,6 +38,7 @@
     "brunch": "^2.2.1",
     "brunch-typescript": "^1.7.1",
     "clean-css-brunch": ">= 1.0 < 1.9",
+    "copyfilemon-brunch": "^3.0.2",
     "css-brunch": ">= 1.0 < 1.9",
     "environment-brunch": "^1.0.0",
     "html-brunch": "^1.6.1",
