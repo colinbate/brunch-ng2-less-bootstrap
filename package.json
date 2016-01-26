@@ -26,6 +26,7 @@
   ],
   "dependencies": {
     "angular2": "2.0.0-beta.1",
+    "bootstrap": "^3.3.6",
     "es6-promise": "^3.0.2",
     "es6-shim": "^0.33.3",
     "es7-reflect-metadata": "^1.4.0",
@@ -41,6 +42,7 @@
     "environment-brunch": "^1.0.0",
     "html-brunch": "^1.6.1",
     "javascript-brunch": ">= 1.0 < 1.9",
+    "less-brunch": "^1.8.1",
     "uglify-js-brunch": ">= 1.0 < 1.9"
   }
 }
