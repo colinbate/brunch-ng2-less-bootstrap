@@ -1,0 +1,22 @@
+nav {
+  margin-bottom: 1em;
+}
+
+.app-nav {
+  border-bottom: 1px solid #ddd;
+}
+
+.app-nav__tabs {
+  border-bottom: 0;
+  padding-left: 15px;
+}
+
+/* USE BOOTSTRAP STYLES WITH ROUTER CLASSES */
+
+.nav-tabs .router-link-active {
+  color: #555;
+  cursor: default;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-bottom-color: transparent;
+}
