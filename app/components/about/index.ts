@@ -2,7 +2,7 @@ import {Component} from 'angular2/core';
 
 @Component({
   selector: 'about',
-  template: require('./about.tpl')(),
+  template: require('./about.tmpl')(),
   styles: [require('./about.style')]
 })
 
