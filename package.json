@@ -1,11 +1,11 @@
 {
-  "name": "ng2-brunch",
-  "description": "Brunch with Angular 2",
+  "name": "brunch-ng2-less-bootstrap",
+  "description": "Brunch with Angular 2, LESS and Bootstrap",
   "author": "Colin Bate <colin@colinbate.com>",
   "version": "0.3.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/colinbate/ng2-brunch"
+    "url": "https://github.com/colinbate/brunch-ng2-less-bootstrap"
   },
   "scripts": {
     "start": "brunch watch --server",
@@ -22,7 +22,9 @@
     "typescript",
     "starter",
     "template",
-    "generator"
+    "generator",
+    "less",
+    "bootstrap"
   ],
   "dependencies": {
     "angular2": "2.0.0-beta.1",
