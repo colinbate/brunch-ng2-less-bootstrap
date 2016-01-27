@@ -18,6 +18,7 @@
 .tmproj
 .idea
 .vs
+.vscode
 nbproject
 Thumbs.db
 

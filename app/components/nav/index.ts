@@ -1,11 +1,12 @@
 import {Component} from 'angular2/core';
 import {ROUTER_DIRECTIVES} from 'angular2/router';
-//import {RouterActive} from '../../directives/router-active';
+import {RouterActive} from './../../directives/router-active';
 
 @Component({
   selector: 'app-nav',
   directives: [
-    ...ROUTER_DIRECTIVES
+    ...ROUTER_DIRECTIVES,
+    RouterActive
   ],
   styles: [ require('./nav.style') ],
   template: require('./nav.tmpl')()
