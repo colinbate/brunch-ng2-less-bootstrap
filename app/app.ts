@@ -34,7 +34,7 @@ import Nav from './components/nav';
     </main>
     <footer>
       <div class="container">
-      Brunch for Angular 2 by <a [href]="url">Colin Bate</a>
+      Brunch with Angular 2, LESS and Bootstrap by <a [href]="url">Colin Bate</a>
       </div>
     </footer>
   `
@@ -45,7 +45,7 @@ import Nav from './components/nav';
   { path: '/**', redirectTo: ['Home'] }
 ])
 export class App {
-  name = 'Brunch for Angular 2';
+  name = 'Brunch with Angular 2';
   url = 'http://colin.is';
   constructor() {
 

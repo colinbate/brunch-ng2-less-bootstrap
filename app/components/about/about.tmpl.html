@@ -1,1 +1,5 @@
-<div>This is an application skeleton created by {{name}}.</div>
+<div>
+  <p>This is an application skeleton created by {{name}}.</p>
+  <button class="btn" (click)="alert()">Why?</button>
+  <alert type="info" dismissible="true" (close)="clearAlert()" *ngIf="showAlert">Because I care!</alert>
+</div>
