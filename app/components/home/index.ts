@@ -10,9 +10,12 @@ import {FORM_DIRECTIVES} from 'angular2/common';
   styles: [],
   template: `
   <div>
-    <div>Your Content Here</div>
-    <input type="text" [value]="title.value" (input)="title.value = $event.target.value">
-    <pre>this.test = {{ title | json }}</pre>
+    <p>Your Content Here</p>
+    <div class="form-group">
+      <label for="homeTitle">Title</label>
+      <input id="homeTitle" type="text" [value]="title.value" (input)="title.value = $event.target.value" class="form-control" autofocus>
+    </div>
+    <pre>this.title = {{ title | json }}</pre>
   </div>`
 })
 export default class Home {
