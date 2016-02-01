@@ -13,11 +13,11 @@ export default class About {
   constructor() {
     this.name = 'Colin';
   }
-  
+
   clearAlert() {
     this.showAlert = false;
   }
-  
+
   alert() {
     this.showAlert = true;
   }

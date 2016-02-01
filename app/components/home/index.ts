@@ -23,7 +23,7 @@ export default class Home {
   constructor() {
     this.title = { value: 'Angular 2' };
   }
-  
+
   setValue(ev) {
     this.title.value = ev.target.value;
   }
