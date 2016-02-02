@@ -1,10 +1,12 @@
 import {Component} from 'angular2/core';
 import {FORM_DIRECTIVES} from 'angular2/common';
+import MyModal from './../my-modal';
+import Modals from './../my-modal/modals';
 
 @Component({
   selector: 'home',
   directives: [
-    ...FORM_DIRECTIVES
+    ...FORM_DIRECTIVES, MyModal
   ],
   pipes: [],
   styles: [],
@@ -16,16 +18,25 @@ import {FORM_DIRECTIVES} from 'angular2/common';
       <input id="homeTitle" type="text" [value]="title.value" (input)="setValue($event)" class="form-control" autofocus>
     </div>
     <pre>this.title = {{ title | json }}</pre>
+    <button class="btn btn-primary" (click)="openModal(mm)">Modal</button>
+    <my-modal #mm></my-modal>
   </div>`
 })
 export default class Home {
   public title: any;
-  constructor() {
+  private showModal: boolean;
+  constructor(private modals: Modals) {
     this.title = { value: 'Angular 2' };
   }
 
   setValue(ev) {
     this.title.value = ev.target.value;
+  }
+  
+  openModal(m) {
+    console.log(m);
+    m.open().then(v => console.log('Closed with:', v));
+    console.log(m);
   }
 
   ngOnInit() {

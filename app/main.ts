@@ -3,6 +3,7 @@ import {provide} from 'angular2/core';
 import {bootstrap} from 'angular2/platform/browser';
 import {ROUTER_PROVIDERS, LocationStrategy, PathLocationStrategy} from 'angular2/router';
 import {HTTP_PROVIDERS} from 'angular2/http';
+import Modals from './components/my-modal/modals';
 
 /*
  * App Component
@@ -18,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function main() {
   bootstrap(App, [
     ...HTTP_PROVIDERS,
     ...ROUTER_PROVIDERS,
+    Modals,
     provide(LocationStrategy, { useClass: PathLocationStrategy })
   ])
   .catch(err => console.error(err));
