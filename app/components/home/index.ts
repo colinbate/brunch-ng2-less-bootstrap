@@ -35,7 +35,7 @@ export default class Home {
   
   openModal(m) {
     console.log(m);
-    m.open().then(v => console.log('Closed with:', v));
+    m.open().then(v => console.log('Closed with:', v)).catch(err => console.log('Dismissed', err));
     console.log(m);
   }
 

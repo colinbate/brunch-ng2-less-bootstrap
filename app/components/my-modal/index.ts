@@ -6,8 +6,8 @@ import Modals from './modals';
   selector: 'my-modal',
   directives: [Modal],
   template: `
-  <modal>
-    This is my personalized modal content.
+  <modal [owner]="me">
+    This is my personalized modal content. {{isOpen}}
   </modal>`
 })
 export default class MyModal extends Modal {
@@ -17,4 +17,8 @@ export default class MyModal extends Modal {
     this.title = 'My Modal!';
   }
   
+  close(value: any) {
+    super.close(value);
+    console.log('Do something neat')
+  }
 }

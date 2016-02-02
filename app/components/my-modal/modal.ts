@@ -1,4 +1,4 @@
-import {Component} from 'angular2/core';
+import {Component, Input} from 'angular2/core';
 import Modals from './modals';
 
 @Component({
@@ -12,11 +12,15 @@ export default class Modal {
   public title: string;
   public id: string;
   public isOpen: boolean;
+  @Input() owner: Modal;
+  private me: Modal;
   
   private resolver: any;
   private rejecter: any;
   
   constructor(modals: Modals) {
+    this.me = this;
+    this.isOpen = false;
     this.title = 'Modal!';
     this.id = 'fetchOrGenerate';
     modals.register(this);
@@ -25,6 +29,9 @@ export default class Modal {
   open(): Promise<any> {
     // TODO: wait for animation
     this.isOpen = true;
+    if (this.rejecter) {
+      this.rejecter('Opening new modal');
+    }
     return new Promise((resolve, rej) => {
       this.resolver = resolve;
       this.rejecter = rej;
